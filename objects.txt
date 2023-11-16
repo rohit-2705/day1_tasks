@@ -1,0 +1,56 @@
+JavaScript is designed on a simple object-based paradigm. An object is a collection of properties, 
+and a property is an association between a name (or key) and a value. A property’s value can be a function, 
+in which case the property is known as a method.
+
+A JavaScript object has properties associated with it. 
+A property of an object can be explained as a variable that is attached to the object. 
+Object properties are basically the same as ordinary JavaScript variables, except for the attachment to objects. The properties of an object define the characteristics of the object. We can access the properties of an object with a simple dot-notation:
+
+objectName.propertyName
+
+Like all JavaScript variables, both the object name (which could be a normal variable) 
+and property name are case sensitive. You can define a property by assigning it a value. 
+For example, let’s create an object named myCar and give it properties named make, model, and year as follows:
+
+var myCar = new Object();
+myCar.make = ‘Ford’;
+myCar.model = ‘Mustang’;
+myCar.year = 1969;
+
+The above example could also be written using an object initializer,
+ which is a comma-delimited list of zero or more pairs of property names and associated values of an object, 
+ enclosed in curly braces ({}):
+
+var myCar = {
+make: ‘Ford’,
+model: ‘Mustang’,
+year: 1969
+};
+Internal Representation of Objects
+1. Properties:
+Objects consist of properties, which are key-value pairs. 
+The keys are strings or symbols, and the values can be any JavaScript data type, including other objects. 
+In the example below, name, age, and profession are properties of the person object.
+const person = {
+  name: "John",
+  age: 30,
+  profession: "Developer"
+};
+2. Methods:
+Objects can also have methods, which are functions associated with the object. 
+Methods are properties that hold function values. In the context of our Person object, 
+a sayHello method might look like this:
+class Person {
+  constructor(name, age, profession) {
+    this.name = name;
+    this.age = age;
+    this.profession = profession;
+  }
+
+  sayHello() {
+    console.log(`Hello, my name is ${this.name}.`);
+  }
+}
+
+const person = new Person("John", 30, "Developer");
+person.sayHello(); // Outputs: Hello, my name is John.
