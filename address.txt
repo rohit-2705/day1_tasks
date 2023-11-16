@@ -1,0 +1,34 @@
+MAC ADDRESS
+To communicate or transfer data from one computer to another, we need an address. 
+In computer networks, various types of addresses are introduced; each works at a different layer. 
+A MAC address, which stands for Media Access Control Address, is a physical address that works at the Data Link Layer. 
+In this article, we will discuss addressing a DLL, which is the MAC Address. 
+
+IP ADDRESS
+An IP address or Internet Protocol address is a unique identifier assigned to every device connected to the internet. 
+It is a set of numbers separated by dots, such as 192.155.12.1 1. 
+The IP address serves two primary functions: network interface identification and location addressing 2.
+
+The IP address is used to identify and communicate with other devices on the internet. 
+When you request a web page or download a file, your computer sends a request to the server hosting the content. 
+The server then sends the requested data back to your computer using your IP address to ensure that 
+the data is delivered to the correct device.
+
+PORTS
+A port is a virtual point where network connections start and end. 
+Ports are software-based and managed by a computer's operating system. 
+Each port is associated with a specific process or service. Ports allow computers to easily differentiate between
+ different kinds of traffic: emails go to a different port than webpages, for instance, 
+ even though both reach a computer over the same Internet connection.
+
+HTTP METHODS
+The Hypertext Transfer Protocol (HTTP) is designed to enable communications between clients and servers.
+HTTP works as a request-response protocol between a client and server.
+
+The GET Method
+GET is used to request data from a specified resource.
+Note that the query string (name/value pairs) is sent in the URL of a GET request:
+
+The POST Method
+POST is used to send data to a server to create/update a resource.
+The data sent to the server with POST is stored in the request body of the HTTP request:
